@@ -1,0 +1,9 @@
+<h2>Inventory</h2>
+
+<br>
+<% @toyinventory.each_with_index do |inventory, i| %>
+     <h3><a href="/content/ <%= i%>"><%= inventory[:name] %></a></h3>
+<% end %>
+
+<br>
+<a href="/content/new">[New]</a>
